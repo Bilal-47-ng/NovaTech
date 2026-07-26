@@ -89,6 +89,15 @@ header nav ul li a:hover {
     background-color: rgba(16, 185, 129, 0.05);
 }
 
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--primary-dark);
+}
+
 .header-btn {
     flex-shrink: 0;
 }
@@ -895,14 +904,21 @@ footer {
         padding-bottom: 20px;
     }
     header nav ul {
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
+        padding: 20px 0;
     }
     header nav ul li a {
+        width: 100%;
+        text-align: center;
         padding: 8px 10px;
         font-size: 14px;
     }
-
+    .menu-btn {
+        display: block;
+    }
     /* HERO SECTION */
     #hero {
         padding: 60px 0;
@@ -1029,4 +1045,51 @@ footer {
     .footer-bottom p {
         font-size: 13px;
     }
+}
+
+/*  =========================
+    JAVASCRIPT FEATURES
+========================== */
+
+/* HEADER ON SCROLL */
+header.scrolled  {
+    background-color: #081320;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ACTIVE NAV LINK */
+header nav a.active {
+    color: var(--accent-blue);
+    background-color: rgba(16, 185, 129, 0.05);
+}
+
+/* MOBILE MENU */
+@media (max-width:768px) {
+    header nav {
+        display: none;
+        width: 100%;
+    }
+    header nav.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* REVEAL ANIMATION */
+.section-header,
+.service-card,
+.project-card,
+.pricing-card,
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 
+    opacity .4s ease,
+    transform .4s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
