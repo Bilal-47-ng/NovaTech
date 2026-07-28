@@ -3,12 +3,11 @@
 // ==========================
 
 export function initReveal() {
-    
-    const elements = document.querySelectorAll(
-        ".section-header, .service-card, .project-card, .pricing-card, .testimonial-card"
-    );
-
     function reveal () {
+
+        const elements = document.querySelectorAll(
+            ".section-header, .service-card, .project-card, .pricing-card, .testimonial-card"
+        );
 
         elements.forEach( (element, index)=> {
 
@@ -21,10 +20,11 @@ export function initReveal() {
             ) {
                 setTimeout(() => {
                     element.classList.add("show");       
-                }, index * 200);
+                }, index * 100);
             }
         });
     }
+    
     reveal();
 
     window.addEventListener("scroll", reveal);

@@ -167,83 +167,34 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Projects</h2>
-                    <p>Explore our latest AI, cloud, and web development projects built for modern businesses.</p>
+                    <p>
+                        Explore our latest AI, cloud, and web development projects built for modern businesses.
+                    </p>
                 </div>
-                
-                <div class="projects-grid">
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/ai-platform.jpeg" alt="Smart Analytics Dashboard">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-category">
-                                AI Platform
-                            </span>
-                            <h3>Smart Analytics Dashboard</h3>
-                            <p>
-                                An AI-powered analytics platform that helps businesses visualize 
-                                data and make smarter decisions.
-                            </p>
-                            <div class="project-tags">
-                                <span>AI</span>
-                                <span>Python</span>
-                                <span>Data Analytics</span>
-                            </div>
-                            <a href="#" class="btn header-btn project-btn">
-                                View project→
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/cloud.jpeg" alt="Cloud Infrastructure platform">
-                        </div>
-                        <div class="project-content">
-                            <span class="project-category">
-                                Cloud Solution
-                            </span>
-                            <h3>Cloud Infrastructure Platform</h3>
-                            <p>A scalable cloud platform designed to improve performance, 
-                                reliability, and deployment speed.
-                            </p>
-                            <div class="project-tags">
-                                <span>AWS</span>
-                                <span>Docker</span>
-                                <span>Cloud</span>
-                            </div>
-                            <a href="#" class="btn header-btn project-btn">
-                                View project→
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/development-web.jpeg" alt="Business Management System">
-                        </div>
-
-                        <div class="project-content">
-                            <span class="project-category">
-                                Web Development
-                            </span>
-                            <h3>Business Management System</h3>
-                            <p>A modern application that helps companies manage operations efficiently.</p>
-                            <div class="project-tags">
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>PostgreSQL</span>
-                            </div>
-                            <a href="#" class="btn header-btn project-btn">
-                                View project→
-                            </a>
-                        </div>
-                    </div>
+                <!-- PROJECT FILTERS -->
+                <div class= "project-filters">
+                    <button data-category="All">
+                        All
+                    </button>
+                    <button data-category="AI Platform">
+                        AI
+                    </button>
+                    <button data-category="Cloud Solution">
+                        Cloud
+                    </button>
+                    <button data-category="Web Development">
+                        Web
+                    </button>
                 </div>
-            </div>
-        
-        </section>
+
+                <!-- PROJECTS -->
+                <div
+                    id="projects-container"
+                    class="projects-grid">
+                </div>
+    </div>
+</section>
 
         <!-- ABOUT SECTION -->
         <section id="about">
