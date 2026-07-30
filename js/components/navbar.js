@@ -2,7 +2,8 @@
 // MOBILE MENU
 // ==========================
 
-export function initMenu() {
+export function initNavbar() {
+
     const menuBtn = document.querySelector(".menu-btn");
     const nav = document.querySelector("header nav");
     if(!menuBtn || !nav) return;
@@ -12,12 +13,20 @@ export function initMenu() {
     menuBtn.addEventListener("click", () => {
         nav.classList.toggle("active");
 
-        menuBtn.textContent =
-            nav.classList.contains("active") 
-                ? "✖"
-                : "☰";
+        updateMenuIcon();
     });
 
+    window.addEventListener("resize", () => {
+
+        if(window.innerWidth > 768){
+
+            nav.classList.remove("active");
+
+            updateMenuIcon();
+
+        }
+
+    });
 
     // CLOSE MENU WHEN CLICKING OUTSIDE
     document.addEventListener("click", (e) => {
@@ -27,7 +36,7 @@ export function initMenu() {
             !menuBtn.contains(e.target)
         ) {
             nav.classList.remove("active");
-            menuBtn.textContent = "☰";
+            updateMenuIcon();
         }
 
     });
@@ -38,7 +47,17 @@ export function initMenu() {
 
         link.addEventListener("click", () => {
             nav.classList.remove("active");
-            menuBtn.textContent = "☰";
+            updateMenuIcon();
         });
     });
+
+    function updateMenuIcon() {
+
+        menuBtn.textContent =
+            nav.classList.contains("active")
+                ? "✖"
+                : "☰";
+
+    }
+
 }

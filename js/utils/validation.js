@@ -1,15 +1,16 @@
 // ==========================
 // CONTACT FORM
 // ==========================
-export function initForm() {
+export function initValidation() {
 
     const form = document.querySelector("#contact-form");
     
+    if(!form) return;
+
     const nameInput = document.querySelector("#name");
     const emailInput = document.querySelector("#email");
     const companyInput = document.querySelector("#company");
     const messageInput = document.querySelector("#message");
-    
     const  formMessage = document.querySelector("#form-message");
 
     form.addEventListener("submit", (event) => {

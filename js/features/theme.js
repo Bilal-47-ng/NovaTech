@@ -6,9 +6,13 @@ export function initTheme() {
 
     const savedTheme = localStorage.getItem("theme");
 
-    if(savedTheme === "dark") {
-        document.body.classList.add("dark");
-        themeBtn.textContent = "☀️";
+    if(savedTheme) {
+        document.body.classList.toggle(
+            "dark",
+            savedTheme === "dark"
+        );
+        themeBtn.textContent = 
+            savedTheme === "dark" ? "☀️" : "🌙";
     }
 
 

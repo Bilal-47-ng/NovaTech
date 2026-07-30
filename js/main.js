@@ -1,15 +1,29 @@
-import { initMenu } from "./menu.js";
-import { initScroll } from "./scroll.js";
-import { initReveal } from "./reveal.js";
-import { initProjects } from "./projects.js";
-import { initForm } from "./form.js";
-import { initTheme } from "./theme.js";
+import { initNavbar } from "./components/navbar.js";
+import { initProjects } from "./components/projects.js";
+// import { initTestimonials } from "./components/testimonials.js";
 
-console.log("JS loaded");
+import { initBackToTop } from "./features/backToTop.js";
+import { initScroll } from "./features/scroll.js";
+import { initTheme } from "./features/theme.js";
 
-initMenu();
-initScroll();
-initReveal();
+import { initCounter } from "./features/counter.js";
+import { initObserver } from "./utils/observer.js";
+import { initValidation } from "./utils/validation.js";
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    initNavbar();
 initProjects();
-initForm();
+
+initBackToTop();
+initScroll();
 initTheme();
+
+initCounter();
+
+initObserver();
+
+initValidation();
+
+});
