@@ -10,7 +10,7 @@ export const projects = [
         description:
             "An AI-powered analytics platform that helps businesses visualize data and make smarter decisions.",
 
-        image: "../../images/ai-platform.jpeg",
+        image: "images/ai-platform.jpeg",
 
         tags: [
             "AI",
@@ -33,7 +33,7 @@ export const projects = [
         description:
             "A scalable cloud platform designed to improve performance, reliability, and deployment speed.",
 
-        image: "../../images/cloud.jpeg",
+        image: "images/cloud.jpeg",
 
         tags: [
             "AWS",
@@ -57,7 +57,7 @@ export const projects = [
         description:
             "A modern application that helps companies manage operations efficiently.",
 
-        image: "../../images/development-web.jpeg",
+        image: "images/development-web.jpeg",
 
         tags: [
             "React",
