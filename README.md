@@ -53,12 +53,6 @@ NovaTech/
 
 ![NovaTech screenshot](images/darkMode.png)
 
-### Mobile
-
-![NovaTech screenshot](images/mobile.png)
-```
-
-
 ## 🚀 Installation
 clone the repository
 
