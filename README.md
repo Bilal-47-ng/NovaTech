@@ -89,4 +89,12 @@ This project was built to practice.
 
 ---
 
+GitHub:
+
+https://github.com/Bilal-47-ng
+
+---
+
+## 📄 License
+
 This project is for learning and portfolio purposes.
