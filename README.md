@@ -100,4 +100,4 @@ GitHub:
 https://github.com/Bilal-47-ng
 
 LinkedIn:
-[text](https://www.linkedin.com/in/bilal-nghouch/)
+https://www.linkedin.com/in/bilal-nghouch/
