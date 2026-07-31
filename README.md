@@ -83,12 +83,21 @@ This project was built to practice.
 
 ---
 
-GitHub:
+## 🔮 Future Improvements
 
-https://github.com/Bilal-47-ng
+- Connect contact form with backend API
+- Add real projects data from database
+- Improve accessibility
+- Add animations library
 
 ---
 
-## 📄 License
+## 👨‍💻 Author
 
-This project is for learning and portfolio purposes.
+Bilal N'ghouch
+
+GitHub:
+https://github.com/Bilal-47-ng
+
+LinkedIn:
+[text](https://www.linkedin.com/in/bilal-nghouch/)
