@@ -1028,6 +1028,11 @@ footer {
   }
 
   /* TESTIMONIALS SECTION */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
   .client-info {
     justify-content: center;
   }
@@ -1231,7 +1236,7 @@ body.dark textarea::placeholder {
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 24px;
   }
   .project-filters {
     gap: 10px;
