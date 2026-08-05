@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "NovaTech",
+			"path": "."
+		},
+		{
+			"name": "my-react-app",
+			"path": "../../../../appliction_download/my-react-app"
+		},
+		{
+			"name": "webfonts",
+			"path": "../../html+css/project2/webfonts"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NovaTech"
+	}
+}
